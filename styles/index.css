@@ -1,0 +1,458 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+  color: white;
+}
+
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-top: 24px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__rigth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__link {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 53px;
+  font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+  margin-left: 8px;
+}
+
+.header__img {
+  width: 40px;
+  height: 40px;
+}
+
+.header__button {
+  padding: 8px 24px;
+  border-radius: 80px;
+  border: double 3px transparent;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  background-image: linear-gradient(#0d0e21, #0d0e21), radial-gradient(circle at top left, #016eda, #d900c0);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+}
+
+.container--sm {
+  max-width: 600px;
+}
+
+.container--md {
+  max-width: 900px;
+}
+
+.container--lg {
+  max-width: 1200px;
+}
+
+.container--xl {
+  max-width: 1536px;
+}
+
+.hero_section {
+  position: relative;
+}
+
+.hero_section__content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero_section__background {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_section__container {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 16px;
+}
+
+.hero_section__image {
+  width: 175px;
+  height: 160px;
+}
+
+.hero_section__title {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.hero_section__description {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero_section__actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.master_chefs_section {
+  background-color: #0d0415;
+  padding-top: 100px;
+  /* overflow-x: hidden; */
+}
+
+.master_chefs_section__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.master_chefs_list {
+  display: grid;
+  margin-top: 100px;
+  gap: 24px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 100px;
+}
+@media screen and (min-width: 600px) {
+  .master_chefs_list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 900px) {
+  .master_chefs_list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .master_chefs_list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.master_chefs_card {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #202231;
+  text-align: center;
+}
+
+.master_chefs_card__content {
+  position: relative;
+  margin-top: -100px;
+}
+
+.master_chefs_card__header {
+  border-radius: 100%;
+  align-items: center;
+  background-size: contain;
+  background-image: linear-gradient(224.43deg, #0D0415 -16.69%, #1B2152 86.36%);
+  display: inline-flex;
+  height: 123px;
+  justify-content: center;
+  width: 123px;
+}
+
+.master_chefs_card__img {
+  /* position: relative; */
+  width: 64px;
+  height: 64px;
+}
+
+.master_chefs_card__description {
+  margin-top: 15px;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.community_section {
+  background-color: #0d0415;
+  padding-top: 100px;
+}
+
+.community_section__title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cook_section {
+  background-color: #0d0415;
+  padding: 100px 0;
+}
+
+.cook_section__title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section_footer {
+  background-color: #161522;
+}
+
+.section_footer__container {
+  padding-top: 64px;
+  gap: 40px;
+}
+
+.section_footer__start {
+  grid-column: span 2/span 2;
+}
+
+.section_footer__image {
+  width: 40px;
+}
+
+.section_footer__text {
+  margin-left: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.section_footer__description {
+  max-width: 288px;
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+.section_footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.section_footer__container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media screen and (min-width: 1200px) {
+  .section_footer__container {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.navigation_card__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation_card__item {
+  margin-top: 16px;
+  color: #6b7280;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+svg {
+  color: #6b7280;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.card_cash {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #202231;
+  border-radius: 10px;
+  padding: 32px 52px;
+}
+
+.card_cash__value {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.card_cash__text {
+  color: gray;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.cash_list {
+  margin-top: 50px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media screen and (min-width: 600px) {
+  .cash_list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cash_list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button--primary {
+  background: linear-gradient(94deg, rgb(1, 110, 218) 0%, rgb(217, 0, 192) 100%);
+}
+
+.button--secondary {
+  background: #2e3348;
+}
+
+.button--small {
+  padding: 8px 24px;
+}
+
+.button--block {
+  width: 100%;
+}
+
+.cook_list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 600px) {
+  .cook_list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cook_list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1536px) {
+  .cook_list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: ) {
+  .cook_list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+.community_list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+@media screen and (min-width: 600px) {
+  .community_list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 900px) {
+  .community_list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .community_list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.community_card__content {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: #202231;
+  text-align: center;
+}
+
+.community_card__number {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.community_card__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+.cook_card__image {
+  width: 111px;
+}
+
+.cook_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=index.css.map */

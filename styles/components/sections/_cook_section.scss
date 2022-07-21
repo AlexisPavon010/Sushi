@@ -1,0 +1,15 @@
+.cook_section {
+  background-color: map-get($theme-colors, 'primary');
+  padding: 100px 0;
+
+}
+
+.cook_section__title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+

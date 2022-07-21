@@ -1,0 +1,21 @@
+.card_cash {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: map-get($theme-colors, "secondary");
+  border-radius: 10px;
+  padding: 32px 52px;
+}
+
+.card_cash__value {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.card_cash__text {
+  color: gray;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}

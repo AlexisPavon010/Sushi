@@ -1,0 +1,15 @@
+.community_section {
+  background-color: map-get($theme-colors, 'primary');
+  padding-top: 100px;
+}
+
+.community_section__title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  // padding-top: 100px;
+  text-align: center;
+}
+
